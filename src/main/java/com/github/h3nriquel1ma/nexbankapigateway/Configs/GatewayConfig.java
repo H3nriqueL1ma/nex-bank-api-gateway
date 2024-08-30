@@ -12,10 +12,10 @@ public class GatewayConfig {
         return builder.routes()
                 .route("register_route", p -> p
                         .path("/register-user")
-                        .uri(""))
+                        .uri("http://localhost:8010/register"))
                 .route("authentication_route", p -> p
                         .path("/authenticate-user")
-                        .uri(""))
+                        .uri("http://localhost:8020/authentication"))
                 .build();
     }
 }
